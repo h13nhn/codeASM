@@ -1,4 +1,4 @@
-# Bài tập kiến trúc máy tính và hợp ngữ KMA
+# Bài tập kiến trúc máy tính và hợp ngữ 
 1. Viết chương trình sử dụng hàm 7, ngắt 21h để nhận 1 ký tự từ bàn phím, dùng 1 biến để lưu trữ ký tự nhận được (do sinh viên tự đặt tên biến), sau đó sử dụng hàm 2, ngắt 21h để in ra màn hình ký tự nhận được đang lưu trong biến ấy. Chương trình phải có đủ các câu thông báo nhập và xuất. Ví dụ: Hay go 1 phim: B Ky tu nhan duoc la: B
 2. Làm lại chương trình bài 1 sao cho không cần sử dụng biến để lưu trữ ký tự mà kết quả chạy chương trình vẫn không thay đổi.
 3. Viết chương trình nhận 1 ký tự từ bàn phím, sau đó in ra màn hình ký tự kế trước và kế sau của ký tự vừa nhập Ví dụ: Hay go 1 phim: B Ky tu ke truoc : A Ky tu ke sau : C
