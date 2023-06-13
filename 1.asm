@@ -23,14 +23,14 @@ start:
     mov ah, 07h
     int 21h
 ;gan ky tu cho bien tam
-mov kyTu, al
+    mov kyTu, al
 
 ;thong bao ky tu nhan duoc
     inchuoi tb2
     
 ;hien thi ky tu duoc nhap vao
-    mov ah, 02h
     mov dl, kyTu
+    mov ah, 02h
     int 21h
 
 ;ket thuc        
