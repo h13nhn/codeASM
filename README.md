@@ -42,13 +42,4 @@
 
 15. Viết chương trình tính giai thừa n! Với n là số nguyên dương nhập từ bàn phím. In kết quả ra màn hình ở dạng thập phân. Cho biết, khả năng của 8086 tính được n lớn nhất là bao nhiêu?
 
-16. Viết chương trình tính ước số chung lớn nhất của 2 số a và b! Với a, b là số nguyên dương nhập từ bàn phím. In kết quả ra màn hình ở dạng thập phân.
 
-17. Viết chương trình nhập 1 chuỗi ký tự. In chuổi dã nhập theo thứ tự ngược. Chương trình có dạng. Nhập ký tự: abcdef Chuổi ngược: fedcba
-
-18. Nhập vào một dãy số, tính trung bình cộng của dãy số đó. Nhập vào dãy số: 1 3 5 6 8 Trung bình cộng: (1+3+5+6+8)/5 = 4
-
-19. Nhập vào một số, tính tổng các chữ số của một số Nhập vào số: 1234 Tổng các chữ số: 10
-
-20. Nhập vào n, kiểm tra n có phải là số hoàn hảo. Số hoàn hảo là số có tổng các ước số tự nhiên không kể chính nó bằng nó 
-  Ví dụ: 6 = 1 + 2 + 3 => 6 là số hoàn hảo
