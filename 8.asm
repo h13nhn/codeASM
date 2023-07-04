@@ -1,7 +1,14 @@
 ;doi tat ca cac ky tu thuong thanh ky tu hoa
 ; doi tat ca cac ky tu hoa thanh ky tu thuong
-dseg segment
-    mang db 50, 0, 50 dup('$')
+inchuoi macro chuoi
+    mov ah, 09h
+    lea dx, chuoi
+    int 21h
+endm    
+dseg segment 
+    max db 50
+    len db ?
+    mang db 50 dup(?)
     xuong db 10, 13, '$'
     gach db ' - $'
     kyTu db ?    
@@ -14,15 +21,16 @@ start:
    
     xor cx, cx
     mov ah, 0Ah
-    lea dx, mang
+    lea dx, max
     int 21h 
     
-    mov ah, 09h
-    lea dx, xuong
-    int 21h
+    inchuoi xuong  
+    
+    
 ;chuyen ky tu HOA thanh thuong    
-    lea si, mang + 2
-    mov cl, [mang + 1]
+    lea si, mang
+    mov cl, len
+    
 lap1:
     cmp [si], 'A'
     jl boqua
@@ -38,10 +46,11 @@ boqua:
     mov ah, 09h
     lea dx, gach
     int 21h
-
+ 
+ 
 ;chuyen ky tu thuong thanh HOA    
-    lea si, mang + 2
-    mov cl, [mang + 1]
+    lea si, mang
+    mov cl, len
 lap2:
     sub [si], 32
     inc si
@@ -54,8 +63,8 @@ lap2:
 
 
 xuat PROC
-    mov cl, [mang + 1]
-    lea si, mang + 2
+    mov cl, len
+    lea si, mang
 lap:
     mov dl, [si]
     mov ah, 02h
@@ -69,4 +78,3 @@ xuat endp
 cseg ends
 end start
     
-
